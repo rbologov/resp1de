@@ -225,9 +225,13 @@ h2.postname a{
 		}
 	}
 	
-	@media only screen and (max-height : 767px) {
+	@media only screen and (max-height : 640px) {
 		.posts {
 			margin-top: 0;
+		}
+		
+		.post {
+			margin-bottom: 30px;
 		}
 	}
 
