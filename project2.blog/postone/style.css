@@ -123,7 +123,6 @@ h3 {
 }
 
 .authorname {
-	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 12px;
 }
@@ -132,5 +131,124 @@ h3 {
 	color: #636467;
 }
 
+.aboutauthor a{
+	text-decoration: none;
+	color: #000;
+}
+
+
 
 /* @end author*/
+
+
+/**********************************************************************************************/
+/* @group optimization */
+/* @group big screen optimization */
+
+	@media only screen and (min-width : 2000px) {
+		
+		.conteiner {
+			width: 1920px;
+		}
+		
+		.photo {
+			width: 1920px;
+			height: 1080px;
+		}
+		
+		.pic {
+			width: 1920px;
+			height: 1080px;
+			-webkit-filter: blur(0.5px);   
+		}
+		
+		.posttext {
+			width: 1760px;
+		}
+		
+		h2.postname {
+			font-size: 45px;
+		}
+		
+		.postname {
+		 	margin-top: 60px;
+		 	margin-bottom: 45px;
+		}
+		
+		.postmeta {
+			margin-bottom: 60px;
+			font-size: 18px;
+		}
+		
+		.postcontent {
+			margin-left: 120px;
+			margin-right: 120px;
+		}
+		
+		.postcontent p {
+			margin-bottom: 60px;
+			font-size: 24px;
+		}
+		
+		h3 {
+			font-size: 40px;
+			line-height: 60px;
+		}
+		
+		.authorinfo {
+			width: 1760px;
+			font-size: 24px;
+		}
+		
+		.autorphoto {
+			height: 120px;
+			width: 120px;
+			margin-left: 120px;
+			margin-right: 50px;
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+		
+		.authorpic {
+			width: 120px;
+			height: 120px;
+		}
+		
+		.aboutauthor {
+			padding-top: 90px;
+			padding-bottom: 90px;
+			margin-right: 120px;
+		}
+	}
+
+/* @end big screen optimization */
+
+/* @group mobile optimization */
+
+	@media only screen and (max-width : 767px) {
+		
+		
+		
+	}
+	
+	@media only screen and (max-height : 640px) {
+		
+		.post {
+			margin-top: 0;
+			margin-bottom: 30px;	
+		}
+		
+		.authorinfo {
+			margin-bottom: 30px;
+		}
+		
+	}
+	
+	@media only screen and (min-width : 768px) and (max-width : 1000px) {
+		
+		
+		
+	}
+
+/* @end mobile optimization */
+/* @end optimization */
