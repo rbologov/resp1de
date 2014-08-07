@@ -227,6 +227,10 @@ h3 {
 
 	@media only screen and (max-width : 767px) {
 		
+		.post {
+			margin-top: 0;	
+		}
+		
 		.conteiner {
 			width: 100%;
 		}
@@ -263,13 +267,29 @@ h3 {
 		.inpostimgleft {
 			float: none;
 			
-
 		}
 		
 		.inpostimg {
 			width: 300px;
 			margin: 0 auto;
 		}
+		
+		.authorinfo {
+			width: 100%;
+		}
+		
+		.autorphoto {
+			margin-left: 5%;
+			margin-right: 5%;
+			padding-bottom: 5px;
+		}
+		
+		.aboutauthor {
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		
+		
 	}
 	
 	@media only screen and (max-height : 640px) {
