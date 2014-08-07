@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #E4E4E4;
+	font-family: "Courier New", Courier, mono, "Lucida Grande", Lucida, Verdana, sans-serif;;
+	
+}
+
+.conteiner {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.cards {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 50px;
+}
+
+.card {
+	background-color: white;
+	margin-bottom: 32px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.cards a {
+	color: black;
+	text-decoration: none;
+}
+
+/**********************************************************************************************/
+/* @group optimization */
+/* @group big screen optimization */
+
+@media only screen and (min-width : 1804px) {
+	.conteiner {
+		width: 1500px;
+	}
+	
+	.cards {
+		font-size: 90px;
+	}
+	
+	.card {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+	
+}
+
+@media only screen and (min-width : 2300px) {
+	.conteiner {
+		width: 2000px;
+	}
+	
+	.cards {
+		font-size: 120px;
+	}
+	
+	.card {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+
+/* @end big screen optimization */
+
+
+/* @group mobile optimization */
+
+@media only screen and  (max-width : 1023px) {
+	.conteiner {
+		width: 100%;
+	}
+	
+	.cards {
+		font-size: 45px;
+	}
+}
+
+@media only screen and  (max-width : 420px) {
+	.conteiner {
+		width: 100%;
+	}
+	
+	.cards {
+		font-size: 30px;
+	}
+	
+	.card {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+
+/* @end mobile optimization */
+/* @end optimization */
