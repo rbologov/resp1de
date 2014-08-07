@@ -8,12 +8,17 @@ body {
 	font-family: "Courier New", Courier, mono, "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
+/* @group headder */
+
 .headder {
 	width: 100%;
 	height: 64px;
 	opacity: 0.9;
-	background-color: #fff;
+	background: url(img/headderbg.png) #fff;
 	position: fixed;
+	top: 0;
+	/*-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .1);*/
 }
 
 .headwrap {
@@ -25,6 +30,7 @@ body {
 	line-height: 64px;
 	font-weight: normal;
 	font-style: normal;
+	float: left;
 	/*margin-left: 51px;*/
 }
 
@@ -33,16 +39,37 @@ body {
 	color: #000;
 }
 
+.topmenu {
+	line-height: 64px;
+	font-size: 24px;
+}
+
+
+.topmenu ul li {
+	display: inline;
+	float: right;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.topmenu a:hover {
+	color: #C8B596;
+}
+
+/* @end headder*/
+
 .topbg {
 	width: 100%;
-	height: 250px;
-	background: url(img/bg.jpg) center no-repeat;
+	height: 314px;
+	background: url(img/bg.jpg) center -730px no-repeat;
+	background-attachment:fixed;
 	/*position: fixed;
 	z-index: -10000;*/
 }
 
 .conteiner {
 	width: 1024px;
+	height: 100%;
 	margin: 0 auto;
 }
 
@@ -51,7 +78,7 @@ body {
 	margin-top: -92px;
 	width: 256px;
 	float: left;
-	background-color: red;
+
 	margin-right: 32px;
 	z-index: 2;
 }
@@ -60,6 +87,8 @@ body {
 	background-color: #fff;
 	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 2px -4px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px -4px rgba(0, 0, 0, .2);
 }
 
 .myphoto {
@@ -74,14 +103,66 @@ body {
 
 .myname {
 	text-align: center;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	line-height: 64px;
 }
 
-.aboutme {
-	text-align: justify;
-	padding: 16px;
-}
+
+	/* @group sosial */
+		
+		.sosial {
+			margin-top: px;
+			width: 256px;
+			height: 64px;
+			background-color: #ffffff;
+			-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		}
+		
+		.vk {
+			width: 64px;
+			height: 64px;
+			background-image: url(img/social/vk_ns.png);
+			float: left;
+		}
+		
+		.vk:hover {
+			background-image: url(img/social/vk_s.png)
+		}
+		
+		.twitter {
+			width: 64px;
+			height: 64px;
+			background-image: url(img/social/twitter_ns.png);
+			float: left;
+		}
+		
+		.twitter:hover {
+			background-image: url(img/social/twitter_s.png);
+		}
+		
+		.instagram {
+			width: 64px;
+			height: 64px;
+			background-image: url(img/social/instagram_ns.png);
+			float: left;
+		}
+		
+		.instagram:hover {
+			background-image: url(img/social/instagram_s.png);
+		}
+		
+		.github {
+			width: 64px;
+			height: 64px;
+			background-image: url(img/social/github_ns.png);
+			float: left;
+		}
+		
+		.github:hover {
+			background-image: url(img/social/github_s.png);
+		}
+		
+	/* @end sosial*/
 
 /* @end wrap1 */
 
@@ -89,30 +170,43 @@ body {
 
 	.wrap2 {
 		background-color: #fff;
-		width: 512px;
-		height: 1000px;
-		float: left;
-		margin-right: 32px;
+		width: 736px;
+		margin-left: 288px;
+		-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		margin-bottom: 50px;
+	}
+	
+	.aboutme {
+		padding: 12px 64px 45px;
+		text-align: justify;
+	}
+	
+	.aboutme h2 {
+		font-size: 32px;
+		line-height: 60px;
+	}
+	
+	.aboutme p {
+		margin-bottom: 10px;
 	}
 
 /* @end wrap2 */
 
-/* @group wrap3 */
-	
-	.wrap3 {
-		background-color: #fff;
-		width: 192px;
-		height: 1000px;
-		float: left;
-	}
-	
-/* @end wrap3 */
+/* @group footer */
 
-
-.wrap2, .wrap3 {
-	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-	margin-bottom: 50px;
-	/*margin-top: 250px;*/
+.line {
+	width: 300px;
+	height: 2px;
+	background-color: #D8D9D8;
+	margin: 0 auto;
 }
 
+.footwrap {
+	width: 1024;
+	margin: 0 auto;
+	line-height: 48px;
+	text-align: center;
+}
+
+/* @end footer*/
