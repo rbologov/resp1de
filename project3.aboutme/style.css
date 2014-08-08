@@ -78,7 +78,6 @@ body {
 	margin-top: -92px;
 	width: 256px;
 	float: left;
-
 	margin-right: 32px;
 	z-index: 2;
 }
@@ -104,13 +103,13 @@ body {
 .myname {
 	text-align: center;
 	line-height: 64px;
+	z-index: 100;
 }
 
 
 	/* @group sosial */
 		
 		.sosial {
-			margin-top: px;
 			width: 256px;
 			height: 64px;
 			background-color: #ffffff;
@@ -118,11 +117,15 @@ body {
 			box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 		}
 		
-		.vk {
+		.vk, .twitter, .instagram, .github {
 			width: 64px;
 			height: 64px;
-			background-image: url(img/social/vk_ns.png);
 			float: left;
+		}
+		
+		
+		.vk {
+			background-image: url(img/social/vk_ns.png);
 		}
 		
 		.vk:hover {
@@ -130,10 +133,7 @@ body {
 		}
 		
 		.twitter {
-			width: 64px;
-			height: 64px;
 			background-image: url(img/social/twitter_ns.png);
-			float: left;
 		}
 		
 		.twitter:hover {
@@ -141,10 +141,7 @@ body {
 		}
 		
 		.instagram {
-			width: 64px;
-			height: 64px;
 			background-image: url(img/social/instagram_ns.png);
-			float: left;
 		}
 		
 		.instagram:hover {
@@ -152,16 +149,13 @@ body {
 		}
 		
 		.github {
-			width: 64px;
-			height: 64px;
 			background-image: url(img/social/github_ns.png);
-			float: left;
 		}
 		
 		.github:hover {
 			background-image: url(img/social/github_s.png);
 		}
-		
+	
 	/* @end sosial*/
 
 /* @end wrap1 */
@@ -188,7 +182,7 @@ body {
 	}
 	
 	.aboutme p {
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 	}
 
 /* @end wrap2 */
@@ -210,3 +204,207 @@ body {
 }
 
 /* @end footer*/
+
+
+/**********************************************************************************************/
+/* @group optimization */
+	/* @group mobile optimization */
+	
+		@media only screen and (max-width : 767px) {
+			
+			.headder {
+				height: auto;
+				position: relative;
+			}
+			
+			.headwrap {
+				width: 100%;
+			}
+			
+			.headwrap h1 {
+				float: none;
+				text-align: center;
+				line-height: normal;
+				margin-top: 12px;
+				margin-bottom: 2px;
+				font-size: 48px;
+			}
+			
+			.topmenu {
+				line-height: normal;
+				padding-bottom: 8px;
+				text-align: center;
+				
+			}
+			
+			.topmenu ul li {
+				float: none;
+				display: block;
+				margin-left: 0px;
+				line-height: 35px;
+				font-size: 32px;
+			}
+			
+			.topbg {
+				background-attachment: scroll;
+				height: 200px;
+				background-position: center -800px;
+				margin-top: -0px;
+			}
+			
+			.conteiner {
+				width: 100%;
+			}
+			
+			
+			/* @group wrap1 */
+				
+				.wrap1 {
+					float: none;
+					margin: -144px auto 276px;
+					width: 320px;
+				}
+				
+				.myphoto {
+					float: left;
+				}
+				
+				
+					/* @group sosial */
+						
+						.sosial {
+							margin-left: 256px;
+							width: 64px;
+							margin-top: -320px;
+							
+						}
+						
+						.vk, .twitter, .instagram, .github  {
+							float: none;
+						}
+						
+					/* @end sosial*/
+					
+			/* @end wrap1 */
+				
+			/* @group wrap2 */
+				
+				.wrap2 {
+					width: 100%;
+					margin-left: 0px;
+					padding-top: 10px;
+					margin-bottom: 6px;
+				}
+				
+				.aboutme h2 {
+					text-align: center;
+				}
+				
+				.aboutme {
+					padding: 8px 5% 16px;
+				}
+				
+			/* @end wrap2 */
+			
+			
+			.footwrap {
+				width: 100%;
+				margin-top: -5px;
+			}
+			
+		}
+		
+		@media only screen and (min-width : 768px) and (max-width : 1000px) {
+			
+			.headwrap {
+				width: 768px;
+			}
+			
+			.topbg {
+				height: 264px;
+				background-position: center -765px;
+			}
+			
+			.conteiner {
+				width: 768px;
+			}
+			
+			/* @group wrap1 */
+				
+				.wrap1 {
+					width: 224px;
+				}
+				
+				.myphoto {
+					width: 224px;
+					height: 224px;
+				}
+				
+				.mypic {
+					width: 224px;
+					height: 224px;
+				}
+				
+					/* @group sosial */
+						
+						.sosial {
+							width: 224px;
+							height: 56px;
+						}
+						
+						.vk, .twitter, .instagram, .github {
+							width: 56px;
+							height: 56px;
+							background-size: 56px 56px;
+						}
+						
+					/* @end sosial*/
+					
+			/* @end wrap1 */
+			
+			/* @group wrap2 */
+			
+				.wrap2  {
+					width: 512px;
+					margin-bottom: 40px;
+				}
+				
+				.aboutme {
+					padding: 8px 32px 16px;
+				}
+				
+				.aboutme h2 {
+					text-align: center;
+				}
+			
+			/* @end wrap2 */
+			
+		}
+		
+	/* @end mobile optimization */
+/* @end optimization */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
