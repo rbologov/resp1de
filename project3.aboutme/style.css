@@ -179,6 +179,7 @@ body {
 	.aboutme h2 {
 		font-size: 32px;
 		line-height: 60px;
+		text-align: right;
 	}
 	
 	.aboutme p {
@@ -215,6 +216,7 @@ body {
 			.headder {
 				height: auto;
 				position: relative;
+				margin-top: -12px;
 			}
 			
 			.headwrap {
@@ -264,11 +266,6 @@ body {
 					margin: -144px auto 276px;
 					width: 320px;
 				}
-				
-				.myphoto {
-					float: left;
-				}
-				
 				
 					/* @group sosial */
 						
@@ -383,28 +380,3 @@ body {
 		
 	/* @end mobile optimization */
 /* @end optimization */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
